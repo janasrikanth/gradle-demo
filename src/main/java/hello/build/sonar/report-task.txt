@@ -1,0 +1,7 @@
+organization=gradle-demo
+projectKey=gradle-demo
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.17032
+dashboardUrl=https://sonarcloud.io/dashboard?id=gradle-demo
+ceTaskId=AXd3yrMgrwpX8-waIRhA
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXd3yrMgrwpX8-waIRhA
