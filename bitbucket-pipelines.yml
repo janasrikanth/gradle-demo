@@ -4,7 +4,7 @@
 #  The workflow allows running tests, code checkstyle and security scans on the default branch.
 
 # Prerequisites: appropriate project structure should exist in the repository.
-
+image: gradle:6.7.1
 pipelines:
   default:
     - parallel:
