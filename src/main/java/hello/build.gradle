@@ -1,12 +1,17 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'application'
-
+plugins {
+      id "jacoco"
+      id "java"
+      id "application"
+      id "eclipse"
+      id "org.sonarqube" version "3.0"
+}
 mainClassName = 'hello.HelloWorld'
-
 // tag::repositories[]
 repositories {
     mavenCentral()
+    maven {
+            url "https://plugins.gradle.org/m2/"
+        }
 }
 // end::repositories[]
 
@@ -24,6 +29,13 @@ targetCompatibility = 1.8
 dependencies {
     implementation "joda-time:joda-time:2.10.5"
     testImplementation "junit:junit:4.12"
+}
+sonarqube {
+  properties {
+    property "sonar.projectKey", "gradle-demo"
+    property "sonar.organization", "gradle-demo"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 // end::dependencies[]
 

@@ -29,9 +29,6 @@ if "%DIRNAME%" == "" set DIRNAME=.
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%..
 
-@rem Resolve any "." and ".." in APP_HOME to make it shorter.
-for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
-
 @rem Add default JVM options here. You can also use JAVA_OPTS and HELLO_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
@@ -83,7 +80,6 @@ set CMD_LINE_ARGS=%*
 @rem Setup the command line
 
 set CLASSPATH=%APP_HOME%\lib\gradle-demo-1.0.0.jar;%APP_HOME%\lib\joda-time-2.10.5.jar
-
 
 @rem Execute hello
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %HELLO_OPTS%  -classpath "%CLASSPATH%" hello.HelloWorld %CMD_LINE_ARGS%
