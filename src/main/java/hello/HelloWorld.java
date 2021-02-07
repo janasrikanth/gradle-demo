@@ -1,4 +1,4 @@
-ckage hello;
+package hello;
 
 import org.joda.time.LocalTime;
 
