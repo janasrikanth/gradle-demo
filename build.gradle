@@ -35,7 +35,7 @@ sonarqube {
     property "sonar.projectKey", "gradle-demo"
     property "sonar.organization", "gradle-demo"
     property "sonar.host.url", "https://sonarcloud.io"
-    property "sonar.login", "${SONAR_TOKEN}"
+   // property "sonar.login", "${SONAR_TOKEN}"
   }
 // SONAR_TOKEN=35e48fede93fc0790d9d2f7f9482dc417c024b54
 
