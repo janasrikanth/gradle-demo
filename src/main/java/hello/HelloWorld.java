@@ -6,6 +6,7 @@ public class HelloWorld {
    public static void main(String[] args) {
      LocalTime currentTime = new LocalTime();
      System.out.println("Hello....The current local time is: " + currentTime);
+     System.out.println("Hello....this for testing sonarcloud");
 
      Greeter greeter = new Greeter();
      System.out.println(greeter.sayHello());
