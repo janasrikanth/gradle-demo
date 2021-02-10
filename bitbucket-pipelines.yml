@@ -5,20 +5,13 @@ pipelines:
   default:
     - step:
         name: build
-        image: openjdk:8
+        image: openjdk:11
         caches:
           - gradle
           - gradlewrapper
         script:
           - chmod +x gradlew
-          - ./gradlew test build -Dsonar.login=$SONAR_TOKEN
-    - step:
-        name: test
-        image: openjdk:11
-        caches:
-          - sonarcloud
-        script:
-          - ./gradlew sonarqube
+          - ./gradlew test build sonarqube -Dsonar.login=$SONAR_TOKEN
 definitions:
   caches:
     sonarcloud: ~/.sonar/cache
