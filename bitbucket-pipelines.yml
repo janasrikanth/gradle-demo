@@ -10,6 +10,7 @@ pipelines:
           - gradle
           - gradlewrapper
         script:
+          - chmod +x gradlew \
           - ./gradlew test build \
             -Dsonar.login=$SONAR_TOKEN
     - step:
