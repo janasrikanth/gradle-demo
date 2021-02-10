@@ -11,8 +11,7 @@ pipelines:
           - gradlewrapper
         script:
           - chmod +x gradlew
-          - ./gradlew test build \
-            -Dsonar.login=$SONAR_TOKEN
+          - ./gradlew test build -Dsonar.login=$SONAR_TOKEN
     - step:
         name: test
         image: openjdk:11
