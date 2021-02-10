@@ -19,3 +19,7 @@ pipelines:
           - sonarcloud
         script:
           - ./gradlew sonarqube
+definitions:
+  caches:
+    sonarcloud: ~/.sonar/cache
+    gradlewrapper: ~/.gradle/wrappe
