@@ -1,5 +1,5 @@
 ##### https://spring.io/guides/gs/gradle/ #####
-Gradle: Gradle is a build automation tool for multi-language software development. It controls the development process in the tasks of compilation and packaging to testing, deployment, and publishing. Supported languages include Java, C/C++, JavaScript
+Gradle: Gradle is a build automation tool for multi-language software development. It controls the development process in the tasks of compilation and packaging to testing, deployment, and publishing. Supported languages include Java, C/C++, JavaScript.
 
 # Gradle Tasks:
 test: The test task automatically detects and executes all the unit tests in the test source set., Once the test execution is complete, it also generates a report. JUnit and TestNG are the supported APIs. The test task provides a Test.
