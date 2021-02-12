@@ -11,7 +11,7 @@ pipelines:
           - gradlewrapper
         script:
           - chmod +x gradlew
-          - ./gradlew test build sonarqube -Dsonar.login=$SONAR_TOKEN --stacktrace
+          - ./gradlew build sonarqube -Dsonar.login=$SONAR_TOKEN --quiet
 definitions:
   caches:
     sonarcloud: ~/.sonar/cache
