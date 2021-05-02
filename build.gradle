@@ -3,7 +3,7 @@ plugins {
       id "java"
       id "application"
       id "eclipse"
-//      id "org.sonarqube" version "3.1.1"
+      id "org.sonarqube" version "3.1.1"
 }
 mainClassName = 'hello.HelloWorld'
 // tag::repositories[]
@@ -30,17 +30,10 @@ dependencies {
     implementation "joda-time:joda-time:2.10.5"
     testImplementation "junit:junit:4.12"
 }
-//sonarqube {
-  //properties {
-    //property "sonar.projectKey", "sonar-token"
-    //property "sonar.organization", "gradle-demo"
-    //property "sonar.host.url", "https://sonarcloud.io"
-    // property "sonar.login", "$SONAR_TOKEN"
- // }
-// SONAR_TOKEN=6d8e6ebe2deb9f74af89faa8305a8442c6033868
-
-// end::dependencies[]
-
-// tag::wrapper[]
-// end::wrapper[]
-//}
+sonarqube {
+  properties {
+    property "sonar.projectKey", "js-techie_gradle-demo"
+    property "sonar.organization", "js-techie-1"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
